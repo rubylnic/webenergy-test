@@ -19,4 +19,9 @@
   font-weight: 700;
 
   color: #344444;
+
+  @include media-mobile {
+    width: 100%;
+    text-align: center;
+  }
 }

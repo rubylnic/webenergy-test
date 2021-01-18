@@ -14,8 +14,14 @@
   }
 }
 
+@mixin media-tablet {
+  @media (min-width: 777px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
 @mixin media-mobile {
-  @media (max-width: 760px) {
+  @media (max-width: 777px) {
     @content;
   }
 }

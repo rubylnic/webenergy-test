@@ -431,7 +431,7 @@ input[type="radio"].visually-hidden {
   .main-header__link:hover, .main-header__link:active {
     opacity: 0.7; }
 
-@media (max-width: 760px) {
+@media (max-width: 777px) {
   .main-header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -578,7 +578,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (max-width: 760px) {
+  @media (max-width: 777px) {
     .catalog__breadcrumbs-list {
       width: 250px;
       margin: 0 auto;
@@ -620,7 +620,7 @@ input[type="radio"].visually-hidden {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  @media (max-width: 760px) {
+  @media (max-width: 777px) {
     .catalog__list {
       max-width: 490px;
       -webkit-box-pack: center;
@@ -643,18 +643,16 @@ input[type="radio"].visually-hidden {
   margin-right: 15px;
   margin-bottom: 20px;
   background-color: #dcdcdc; }
-  @media (max-width: 1023px) {
-    .catalog__item:nth-of-type(3n) {
-      margin-right: 15px; }
-    .catalog__item:nth-of-type(2n) {
-      margin-right: 0; } }
-  @media (max-width: 760px) {
+  .catalog__item:nth-of-type(3n) {
+    margin-right: 0; }
+  @media (max-width: 777px) {
     .catalog__item {
       margin-right: 0; }
       .catalog__item:nth-of-type(3n) {
         margin-right: 0; } }
-  .catalog__item:nth-of-type(3n) {
-    margin-right: 0; }
+  @media (min-width: 777px) and (max-width: 1023px) {
+    .catalog__item:nth-of-type(3n) {
+      margin-right: 15px; } }
 
 .catalog__item h3 {
   margin: 0;
@@ -668,6 +666,16 @@ input[type="radio"].visually-hidden {
 
 .catalog__item img {
   margin-bottom: 18px; }
+
+.catalog__price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .catalog__item span {
   font-size: 28px;
@@ -687,12 +695,12 @@ input[type="radio"].visually-hidden {
 
 .left-block {
   width: 19%;
-  min-width: 200px;
+  min-width: 185px;
   margin-bottom: 50px; }
   .left-block li:hover,
   .left-block li:focus {
     opacity: 0.7; }
-  @media (max-width: 760px) {
+  @media (max-width: 777px) {
     .left-block {
       width: 100%; } }
 
@@ -703,7 +711,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   font-size: 18px;
   list-style: none; }
-  @media (max-width: 760px) {
+  @media (max-width: 777px) {
     .left-block__list {
       max-width: 100%;
       text-align: center; } }
@@ -750,6 +758,10 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   font-weight: 700;
   color: #344444; }
+  @media (max-width: 777px) {
+    .price-list__heading {
+      width: 100%;
+      text-align: center; } }
 
 .right-block {
   width: 80%;
