@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-mobile-tablet {
+    display: block;
+  }
+}
+
+.about__text {
+  width: 48%;
+  margin: 0;
+  letter-spacing: 0.02em;
+
+  @include media-mobile-tablet {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

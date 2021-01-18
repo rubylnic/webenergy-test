@@ -1,0 +1,155 @@
+.catalog__container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 198px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media-mobile-tablet {
+    justify-content: center;
+  }
+}
+
+.catalog__breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+
+  @include media-mobile {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__breadcrumbs-item {
+  position: relative;
+  margin-right: 20px;
+  letter-spacing: 0.02em;
+
+  &:last-of-type {
+    margin-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -36%;
+    width: 10px;
+    height: 20px;
+    content: "/";
+  }
+}
+
+.catalog__breadcrumbs-link {
+  color: $grey;
+
+  &--active {
+    text-decoration: none;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+
+  @include media-mobile-tablet {
+    justify-content: center;
+  }
+
+  @include media-mobile {
+    max-width: 490px;
+    justify-content: center;
+  }
+}
+
+.catalog__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.catalog__item {
+  width: 250px;
+  height: 380px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  background-color: #dcdcdc;
+
+  @include media-mobile-tablet {
+    &:nth-of-type(3n) {
+      margin-right: 15px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media-mobile {
+    margin-right: 0;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+
+.catalog__item h3 {
+  margin: 0;
+  margin-bottom: 58px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.9em;
+  color: $grey;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.catalog__item img {
+  margin-bottom: 18px;
+}
+
+.catalog__item span {
+  font-size: 28px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.catalog__button {
+  width: 28px;
+  height: 21px;
+  padding: 0;
+  padding-right: 43px;
+  border: none;
+  background: url("../img/basket.png") 0 0 no-repeat;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}

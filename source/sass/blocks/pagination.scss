@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+
+  margin-bottom: 85px;
+
+  justify-content: center;
+}
+
+.pagination__list {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.pagination__link {
+  color: $grey;
+
+  text-decoration: none;
+
+  &--active {
+    font-size: 18px;
+
+    color: #444444;
+  }
+
+  &:hover,
+  &:focus {
+    color: #444444;
+  }
+}

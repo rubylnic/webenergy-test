@@ -1,0 +1,21 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: $grey;
+}
+
+@mixin media-mobile-tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: 760px) {
+    @content;
+  }
+}
