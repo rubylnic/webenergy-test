@@ -109,12 +109,8 @@
     margin-right: 0;
 
     &:nth-of-type(3n) {
-      margin-right: 0;
+      margin-right: 15px;
     }
-  }
-
-  &:nth-of-type(3n) {
-    margin-right: 0;
   }
 }
 
